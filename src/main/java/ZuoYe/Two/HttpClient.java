@@ -19,6 +19,7 @@ public class HttpClient {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         //get请求
         HttpGet httpGet = new HttpGet("http://localhost:8801");
+
         CloseableHttpResponse response = httpClient.execute(httpGet);
         try{
             HttpEntity entity = response.getEntity();

@@ -35,6 +35,7 @@ public class HttpServer01 {
             printWriter.write(body);
             printWriter.close();
             socket.close();
+
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
